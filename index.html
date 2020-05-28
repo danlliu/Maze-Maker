@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Maze Maker</title>
+    </head>
+    <body>
+        <form>
+            <label for="width", id="width_input">Width:</label>
+            <input type="number" min="7" max="127" value="7" id="width">
+            <br>
+            <label for="height", id="height_input">Height:</label>
+            <input type="number" min="7" max="127" value="7" id="height">
+            <br>
+            <input type="button" onclick="makeMaze()" value="Make me a maze!">
+        </form>
+        <p id="maze_info"></p>
+        <canvas id="maze"></canvas>
+        <script src="js/main.js"></script>
+    </body>
+</html>
